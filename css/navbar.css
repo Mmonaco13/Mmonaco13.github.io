@@ -1,0 +1,25 @@
+.navbar{
+    text-align: right;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 1%;
+    font-size: 1.1em;
+}
+
+.navbar li{
+    display: inline;
+    padding-right: 1%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: steelblue;
+}
+
+.navbar a:hover {
+    font-weight: bold;
+}
+
+.facebook, .linkedin, .github{
+    max-width: 20px;
+}
