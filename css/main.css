@@ -1,4 +1,8 @@
 /* General */
+:root {
+    --accent: black;
+}
+
 body {
     background-image: url('../images/newyork.jpg');
     background-repeat: no-repeat;
@@ -11,7 +15,7 @@ body {
 h3 {
     font-weight: bold;
     font-size: x-large;
-    color: steelblue;
+    color: var(--accent);
 }
 
 header{
@@ -43,22 +47,38 @@ h2{
 .headshot {
     display: block;
     margin: auto;
-    max-width: 55%;
+    max-width: 70%;
     height: auto;
     border-radius: 15%;
-    border: 5px solid steelblue;
+    border: 5px solid var(--accent);
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+  
+ul:not(.skillList) li::before {
+    content: "\2022";
+    color: var(--accent);
+    font-weight: bolder;
+    font-size: xx-large;
+    display: inline-block; 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+}
+
+.introBlocks {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .intro {
-    display: inline-block;
-    width: 55%;
+    max-width: 65%;
 }
 
 .image {
-    display: inline-block;
-    height: auto;
-    padding-bottom: 7%;
-    width: 44%;
+    display: flex;
+    justify-content: center;
 }
 
 progress {
@@ -76,7 +96,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: steelblue;
+    background-color: var(--accent);
     border-radius: 7px;
     box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.8);
 }
@@ -104,6 +124,8 @@ progress::-webkit-progress-value {
 }
 
 .connectImage {
+    display: block;
+    margin: auto;
     max-width: 60%;
 }
 
@@ -117,6 +139,7 @@ progress::-webkit-progress-value {
 	background-color: rgba(240, 240, 240, 0.7);
     width: 100%;
 	height: 25px;
+    color: var(--accent);
 	text-align: center;
 }
 
