@@ -154,27 +154,17 @@ progress::-webkit-progress-value {
     height: auto;
     z-index: 1;
     display: none;
-}
+}*/
 
 @media screen and (max-width: 900px) {
-    .menu-open-button{display: none;}
-    #cssmenu{display: none;}
-    .menu-mobile-button{display: inline;}
-    .box{display: none;}
-    .info-box{min-height: 500px;}foot
-    .footerBar{display:none;}
-    .about-box:hover{
-         transform: scale(1.15);
-     }
-    .about-box a{display: block;}
-    blockquote{display: none;}
-    .pres{display: none;}
-    .report-button{top: 20px;}
-    .logo{display: none;}
-    .headerContainer{
-    padding-left: 0px;
-	margin-left:0px;
-	margin-right:0px;}
-    h5{font-size: 3em;}
+    body {
+        background-image: url('../images/newYorkMobile.jpg');
+    }
+    .introBlocks{
+        flex-direction: column-reverse;
+    }
+    .image{margin-top: 5%;}
+    .intro{max-width: 100%;}
+    .skillList{columns: 1;}
+    .coursework{columns: 1;}
 }
-*/
