@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="./css/main.css" rel="stylesheet">
         <link href="./css/navbar.css" rel="stylesheet">
@@ -21,40 +22,38 @@
     <body>
 
         <!--Navigation-->
-        <nav>
-            <ol class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about-me-link">About Me</a></li>
-                <li><a href="#education-link">Education</a></li>
-                <li><a href="#experience-link">Experience</a></li>
-                <li><a href="#projects-link">Projects</a></li>
-                <li><a href="#skills-link">Skills</a></li>
-                <li><a href="#contact-link">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/matthew-monaco-b5796a149/">
-                    <img class="linkedin" src="./images/linkedin.png"></a></li>
-                <li><a href="https://github.com/Mmonaco13">
-                    <img class="github" src="./images/github.png"></a></li>
-                <li><a href="https://www.facebook.com/mattmonaco13">
-                    <img class="facebook" src="./images/facebook.png"></a></li>
-            </ol>
+        <nav class="navbar" id='topNav'>
+            <a href="index.html" onclick="hamburger()">Home</a>
+            <a href="#about-me-link" onclick="hamburger()">About Me</a>
+            <a href="#education-link" onclick="hamburger()">Education</a>
+            <a href="#experience-link" onclick="hamburger()">Experience</a>
+            <a href="#projects-link" onclick="hamburger()">Projects</a>
+            <a href="#skills-link" onclick="hamburger()">Skills</a>
+            <a href="#contact-link" onclick="hamburger()">Contact</a>
+            <a href="https://www.linkedin.com/in/matthew-monaco-b5796a149/" onclick="hamburger()">
+                <img class="linkedin" src="./images/linkedin.png"></a>
+            <a href="https://github.com/Mmonaco13" onclick="hamburger()">
+                <img class="github" src="./images/github.png"></a>
+            <a href="https://www.facebook.com/mattmonaco13" onclick="hamburger()">
+                <img class="facebook" src="./images/facebook.png"></a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="fa fa-bars"></i></a>
         </nav>
 
-        <nav>
-            <ol class="navbar-vert">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about-me-link">About Me</a></li>
-                <li><a href="#education-link">Education</a></li>
-                <li><a href="#experience-link">Experience</a></li>
-                <li><a href="#projects-link">Projects</a></li>
-                <li><a href="#skills-link">Skills</a></li>
-                <li><a href="#contact-link">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/matthew-monaco-b5796a149/">
-                    <img class="linkedin" src="./images/linkedin.png"></a></li>
-                <li><a href="https://github.com/Mmonaco13">
-                    <img class="github" src="./images/github.png"></a></li>
-                <li><a href="https://www.facebook.com/mattmonaco13">
-                    <img class="facebook" src="./images/facebook.png"></a></li>
-            </ol>
+        <nav class="navbar-vert" id="navVert">
+            <a href="index.html">Home</a></li>
+            <a href="#about-me-link">About Me</a></li>
+            <a href="#education-link">Education</a></li>
+            <a href="#experience-link">Experience</a></li>
+            <a href="#projects-link">Projects</a></li>
+            <a href="#skills-link">Skills</a></li>
+            <a href="#contact-link">Contact</a></li>
+            <a href="https://www.linkedin.com/in/matthew-monaco-b5796a149/">
+                <img class="linkedin" src="./images/linkedin.png"></a></li>
+            <a href="https://github.com/Mmonaco13">
+                <img class="github" src="./images/github.png"></a></li>
+            <a href="https://www.facebook.com/mattmonaco13">
+                <img class="facebook" src="./images/facebook.png"></a></li>
         </nav>
 
         <header>

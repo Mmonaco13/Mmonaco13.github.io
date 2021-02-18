@@ -38,12 +38,24 @@ $( document ).ready(function() {
 
   $(function () {
 		$(window).scroll(function () {
-      // set distance user needs to scroll before we fadeIn navbar
-			if ($(this).scrollTop() > 700) {
-				$('.navbar-vert').fadeIn();
-			} else {
-				$('.navbar-vert').fadeOut();
-			}
+
+      let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      if (width > 899) { 
+        if ($(this).scrollTop() > 700) {
+          $('.navbar-vert').fadeIn();
+        } else {
+          $('.navbar-vert').fadeOut();
+        }
+      }
 		});
 	});
 });
+
+function hamburger() {
+  let x = document.getElementById("topNav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}

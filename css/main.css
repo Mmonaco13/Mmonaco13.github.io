@@ -146,12 +146,11 @@ progress::-webkit-progress-value {
 	text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
     body {background-image: url('../images/newYorkMobile.jpg');}
     .introBlocks{flex-direction: column-reverse;}
     .image{margin-top: 5%;}
     .intro{max-width: 100%;}
     .skillList{columns: 1;}
     .coursework{columns: 1;}
-    .navbar{display: none;}
 }
