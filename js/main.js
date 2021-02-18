@@ -33,4 +33,17 @@ $( document ).ready(function() {
     default:
       root.style.setProperty('--accent', '#FA8072');
   }
+
+  $(".navbar-vert").hide();
+
+  $(function () {
+		$(window).scroll(function () {
+      // set distance user needs to scroll before we fadeIn navbar
+			if ($(this).scrollTop() > 700) {
+				$('.navbar-vert').fadeIn();
+			} else {
+				$('.navbar-vert').fadeOut();
+			}
+		});
+	});
 });
