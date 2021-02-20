@@ -148,8 +148,13 @@ progress::-webkit-progress-value {
 
 @media screen and (max-width: 899px) {
     body {
-        background-image: url('../images/newYorkMobile.jpg');
-        background-attachment: fixed;
+        background-image: none;
+        background-color: whitesmoke;
+    }
+
+    .bodyContainer{
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .introBlocks{flex-direction: column-reverse;}
     .image{margin-top: 5%;}
