@@ -44,7 +44,7 @@
     display: block;
     font-size: 20px;
     color: var(--accent);
-    padding-bottom: 65px;
+    padding-bottom: 20%;
     text-decoration: none;
     text-align: center;
 }
